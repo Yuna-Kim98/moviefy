@@ -1,2 +1,32 @@
 @import "tailwindcss";
 
+@theme {
+    --color-primary: #333333;
+}
+
+.search {
+    position: relative;
+}
+
+.search::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("/assets/search_icon.svg") center/contain no-repeat;
+    pointer-events: none;
+    width: 12px;
+    height: 12px;
+}
+
+.input {
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
+    /* ring-2, black */
+}
