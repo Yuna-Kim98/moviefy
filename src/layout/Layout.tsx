@@ -11,9 +11,7 @@ export default function Layout({ children }: LayoutProps) {
         <>
             <Header />
             <main>
-                <div className="mx-auto w-full max-w-screen-xl px-4 md:px-6 lg:px-8">
-                    {children}
-                </div>
+                {children}
             </main>
             <Footer />
         </>
